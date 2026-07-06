@@ -1,10 +1,12 @@
 # Generise PDF verziju kursa iz markdown fajla, bez ikakvih instalacija:
 # markdown -> HTML (ovaj skript) -> PDF (Microsoft Edge headless stampa).
-# Upotreba:  powershell -ExecutionPolicy Bypass -File .\napravi-pdf.ps1
+# Upotreba:  powershell -ExecutionPolicy Bypass -File .\napravi-pdf.ps1 [-MdPath fajl.md] [-Lang en]
 param(
     [string]$MdPath  = "KURS-CLAUDE-CODE-90-DANA.md",
-    [string]$PdfPath = "KURS-CLAUDE-CODE-90-DANA.pdf"
+    [string]$PdfPath = "",
+    [string]$Lang    = "sr-Latn"
 )
+if (-not $PdfPath) { $PdfPath = [System.IO.Path]::GetFileNameWithoutExtension($MdPath) + '.pdf' }
 
 $ErrorActionPreference = 'Stop'
 
@@ -68,7 +70,7 @@ while ($i -lt $n) {
         $anchor = Get-Anchor $text
         $cls = ''
         if ($level -eq 1) {
-            if ($h1seen) { $cls = ' class="pb"' }
+            if ($h1seen) { $cls = ' class="pb"' } else { $docTitle = ($text -split '—')[0].Trim() }
             $h1seen = $true
         }
         [void]$body.AppendLine("<h$level id=""$anchor""$cls>" + (Convert-Inline $text) + "</h$level>")
@@ -161,10 +163,10 @@ hr { border: none; border-top: 1px solid #e0d5c8; margin: 14px 0; }
 
 $html = @"
 <!DOCTYPE html>
-<html lang="sr-Latn">
+<html lang="$Lang">
 <head>
 <meta charset="utf-8">
-<title>Claude Code za 90 dana</title>
+<title>$docTitle</title>
 <style>
 $css
 </style>
@@ -175,7 +177,7 @@ $($body.ToString())
 </html>
 "@
 
-$htmlPath = Join-Path $env:TEMP 'kurs-claude-code.html'
+$htmlPath = Join-Path $env:TEMP ([System.IO.Path]::GetFileNameWithoutExtension($MdPath) + '.html')
 [System.IO.File]::WriteAllText($htmlPath, $html, (New-Object System.Text.UTF8Encoding($true)))
 Write-Host "HTML generisan: $htmlPath"
 
