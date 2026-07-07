@@ -41,3 +41,15 @@ powershell -ExecutionPolicy Bypass -File .\napravi-pdf.ps1 -MdPath KURS-CLAUDE-C
 Kurs je slobodan za deljenje. Pravljen je po javno dostupnoj dokumentaciji Claude Code-a; komande i nazivi mogu vremenom da se menjaju — kad nešto ne radi kako kurs kaže, pitaj sam alat (`/help`) ili proveri dokumentaciju.
 
 *The course is free to share. When something doesn't match the tool anymore, ask the tool itself (`/help`) or check the official docs.*
+
+## Licenca / License / Lizenz
+
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+Ovaj kurs je licenciran pod **[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)**. Smeš da deliš i menjaš materijal (i u komercijalne svrhe) uz **navođenje autora** i pod uslovom da izvedene radove deliš pod **istom licencom**. Puni tekst: [LICENSE](LICENSE).
+
+*Licensed under **CC BY-SA 4.0**. You may share and adapt the material (including commercially) as long as you give appropriate credit and license your derivatives under the same terms.*
+
+*Lizenziert unter **CC BY-SA 4.0**. Teilen und Bearbeiten (auch kommerziell) ist erlaubt, sofern der Urheber genannt wird und Bearbeitungen unter derselben Lizenz weitergegeben werden.*
+
+© 2026 Dejan Major
