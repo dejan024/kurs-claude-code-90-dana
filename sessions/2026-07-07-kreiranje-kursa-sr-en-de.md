@@ -23,7 +23,7 @@ Cela izrada projekta od nule, u jednoj sesiji (kasnije izdvojeno u zaseban repo)
 
 - **Sesije ovog projekta idu OVDE** (`sessions/` u ovom folderu), ne u neki drugi projekat — eksplicitna instrukcija korisnika 2026-07-07.
 - Kad se menja bilo koja jezička verzija kursa, izmeniti **sve tri** (SR je izvorna) i regenerisati **sva tri PDF-a** (`napravi-pdf.ps1`, komande u README).
-- PDF-ovi nisu vizuelno pregledani (nema render alata na mašini) — korisnik treba da prelista PDF-ove (dijakritika č/ć/š/ž/đ i ä/ö/ü/ß, tabele).
+- PDF-ovi su pregledani od strane korisnika (dijakritika č/ć/š/ž/đ i ä/ö/ü/ß, tabele) — sve je OK.
 - Kurs ne sme pominjati nijedan privatni projekat (javan repo — važi globalno pravilo o ne-pominjanju privatnih stvari u javnim repoima).
 - Anchor konvencija u `napravi-pdf.ps1` prati GitHub stil (mala slova, bez interpunkcije, razmaci→crtice) — pri dodavanju novih naslova sa linkovima proveriti da se poklapaju.
 
@@ -37,6 +37,5 @@ Cela izrada projekta od nule, u jednoj sesiji (kasnije izdvojeno u zaseban repo)
 
 ## Stanje posle sesije / sledeći koraci
 
-- Projekat je kompletan i objavljen: 3 jezičke verzije (md + PDF) na https://github.com/dejan024/kurs-claude-code-90-dana, repo je javan i spreman za deljenje.
-- **Čeka korisnika:** prelistati sva tri PDF-a (dijakritika, umlauti, tabele) — ako nešto ne valja, popravka ide u `napravi-pdf.ps1` pa regenerisati.
+- Projekat je kompletan, objavljen i verifikovan: 3 jezičke verzije (md + PDF) na https://github.com/dejan024/kurs-claude-code-90-dana, repo je javan i spreman za deljenje. PDF-ovi pregledani — sve OK.
 - Moguće buduće ideje (nisu dogovorene): licenca (npr. CC BY), GitHub Pages prezentacija kursa, ažuriranje kursa kad se Claude Code promeni (komande/nazivi u kursu prate dokumentaciju iz jula 2026).
