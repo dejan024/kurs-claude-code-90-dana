@@ -1,6 +1,8 @@
 # Generise PDF verziju kursa iz markdown fajla, bez ikakvih instalacija:
 # markdown -> HTML (ovaj skript) -> PDF (Microsoft Edge headless stampa).
 # Upotreba:  powershell -ExecutionPolicy Bypass -File .\napravi-pdf.ps1 [-MdPath fajl.md] [-Lang en]
+#
+# Copyright (c) 2026 Dejan Major. Licencirano pod MIT licencom (vidi LICENSE-code).
 param(
     [string]$MdPath  = "KURS-CLAUDE-CODE-90-DANA.md",
     [string]$PdfPath = "",

@@ -46,10 +46,12 @@ Kurs je slobodan za deljenje. Pravljen je po javno dostupnoj dokumentaciji Claud
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-Ovaj kurs je licenciran pod **[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)**. Smeš da deliš i menjaš materijal (i u komercijalne svrhe) uz **navođenje autora** i pod uslovom da izvedene radove deliš pod **istom licencom**. Puni tekst: [LICENSE](LICENSE).
+**Sadržaj kursa** (markdown i PDF verzije) licenciran je pod **[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)**. Smeš da deliš i menjaš materijal (i u komercijalne svrhe) uz **navođenje autora** i pod uslovom da izvedene radove deliš pod **istom licencom**. Puni tekst: [LICENSE](LICENSE).
 
-*Licensed under **CC BY-SA 4.0**. You may share and adapt the material (including commercially) as long as you give appropriate credit and license your derivatives under the same terms.*
+**Kod** (`napravi-pdf.ps1`) licenciran je pod **[MIT licencom](LICENSE-code)** — slobodno korišćenje uz zadržavanje obaveštenja o autorskim pravima.
 
-*Lizenziert unter **CC BY-SA 4.0**. Teilen und Bearbeiten (auch kommerziell) ist erlaubt, sofern der Urheber genannt wird und Bearbeitungen unter derselben Lizenz weitergegeben werden.*
+*Course content is licensed under **CC BY-SA 4.0** ([LICENSE](LICENSE)); the code (`napravi-pdf.ps1`) is licensed under the **MIT License** ([LICENSE-code](LICENSE-code)).*
+
+*Die Kursinhalte stehen unter **CC BY-SA 4.0** ([LICENSE](LICENSE)); der Code (`napravi-pdf.ps1`) steht unter der **MIT-Lizenz** ([LICENSE-code](LICENSE-code)).*
 
 © 2026 Dejan Major
